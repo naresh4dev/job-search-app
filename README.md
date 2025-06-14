@@ -1,8 +1,31 @@
-# Welcome to your Expo app 👋
+# Welcome to Job Search app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+## Project Walkthrough Video 
+🎥 [Demo Walkthrough Video](https://drive.google.com/file/d/1Zof9XP4TWFGGFklOO2yka_sIsg2AwJ0E/view?usp=sharing)
+
+## ScreenShots
+### Jobs Screen 
+- Browse real-time job data with smooth infinite scrolling.
+- View job info: title, location, salary, and contact.
+- Shows how long ago the job was posted: `3 hours ago`, `2 weeks ago`, etc.
+![Jobs Screen](./screenshots//JobsScreen.png)
+
+### Bookmarks Screen
+- Bookmark jobs and store them locally using AsyncStorage.
+- Access saved jobs offline in a separate tab.
+- Jobs remain saved even after closing the app.
+![Bookmarks Screen](./screenshots/BookmarksScreen.png)
+
+### Job Detailed Screen
+- View full job information on a dedicated screen.
+- Initiate direct phone calls (tel links).
+![Job Detailed Screen](./screenshots/JobDetailsScreen.png)
+![Job Detailed Screen CONT.](./screenshots/JobDetailsScreen_CONT.png)
+
+
+## Set up
 
 1. Install dependencies
 
@@ -25,26 +48,17 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
 
-When you're ready, run:
+## 🧩 Libraries & Tools Used
 
-```bash
-npm run reset-project
-```
+| Library | Purpose |
+|--------|---------|
+| Expo | Rapid React Native development |
+| **react-native-paper** | UI component library for Material Design |
+| **@react-navigation/native** | Navigation and stack handling |
+| **@react-navigation/bottom-tabs** | Bottom tab navigation support |
+| **axios** | HTTP client to fetch job listings |
+| **@react-native-async-storage/async-storage** | Store bookmarks offline |
+| **React Context API** | Global state for bookmark management |  
+___
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
